@@ -1,4 +1,3 @@
-# Grupo-3
-GruPong
-Proyecto de juego Pong.
-David Caraballo, Marco Giraldez, Myriam Bejarano
+Grupo3 - GruPong.
+Proyecto de juego estilo Pong en Java.
+David Caraballo, Marco Giraldez, Myriam Bejarano.
