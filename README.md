@@ -1,3 +1,3 @@
-Grupo3 - GruPong.
-Proyecto de juego estilo Pong en Java para dos jugadores simultáneos.
+Grupo3 - VideoGroup
+Proyecto de sistema de gestión de un videoclub
 David Caraballo, Marco Giraldez, Myriam Bejarano.
