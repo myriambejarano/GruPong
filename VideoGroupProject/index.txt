@@ -10,33 +10,51 @@ Este proyecto consiste en el desarrollo de un sistema de gestión de un videoclu
 
 ---
 
-FUNCIONALIDADES:
+----------------------------------------
+Funcionalidades:
+----------------------------------------
+- Alta de usuarios
+- Registro de películas
+- Alquiler de películas
+- Devolución de películas
+- Gestión de lista de espera
+- Control de estado de películas (stock, reservada, alquilada)
+- Detección de usuarios con retrasos en devoluciones
+- Asignación automática de películas a usuarios en lista de espera
 
-* Alta de usuarios
-* Alta de películas
-* Reserva / alquiler de películas
-* Devolución de películas
-* Lista de espera para películas no disponibles
-* Control del estado de las películas mediante enum:
-  1 = STOCK
-  2 = RESERVADA
-  3 = ALQUILADA
-* Detección de usuarios con retraso en la devolución
+----------------------------------------
+Estructura del proyecto:
+----------------------------------------
+/videoclub
+ ├── src/
+ │   ├── Usuario.java
+ │   ├── Pelicula.java
+ │   ├── Reserva.java
+ │   ├── Videoclub.java
+ │   ├── EstadoPelicula.java
+ │   └── Main.java
+ ├── index.txt
+ └── README 
 
----
+- Usuario:
+  Gestiona la información del usuario y sus películas alquiladas.
 
-ESTRUCTURA DEL PROYECTO:
+- Pelicula:
+  Representa una película con su estado y lista de espera.
 
-Clases principales:
+- Reserva:
+  Controla la relación entre usuario y película, incluyendo fechas.
 
-* Usuario.java → Gestiona la información de los usuarios
-* Pelicula.java → Representa cada película
-* Reserva.java → Controla las reservas y fechas
-* Videoclub.java → Lógica principal del sistema
-* EstadoPelicula.java → Enum con los estados
-* Main.java → Punto de entrada del programa
+- Videoclub:
+  Contiene la lógica principal del sistema.
 
----
+- EstadoPelicula (enum):
+  Define los estados posibles de una película.
+
+- Main:
+  Punto de entrada del programa.
+
+
 
 CÓMO EJECUTAR:
 
