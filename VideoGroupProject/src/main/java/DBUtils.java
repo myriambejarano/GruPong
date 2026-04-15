@@ -1,5 +1,3 @@
-package TrabajoColaborativoUD8.src.main.java.com.mycompany.trabajocolaborativoud8;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
