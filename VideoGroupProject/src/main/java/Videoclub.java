@@ -31,14 +31,14 @@ public class Videoclub {
             System.out.println(u.getNombre() + " ha alquilado " + p.getTitulo());
         } else {
             p.agregarAListaEspera(u);
-            System.out.println("Lo sentimos, "+u.getNombre()+" pero la película no disponible. Añadido a lista de espera.");
+            System.out.println("Lo sentimos, "+u.getNombre()+" pero la película: "+p.getTitulo()+" no está disponible. Añadido a lista de espera.");
         }
     }
 
     public void devolverPelicula(Usuario u, Pelicula p) {
         u.devolverPelicula(p);
         p.setEstado(EstadoPelicula.STOCK);
-
+        System.out.println(u.getNombre()+" ha devuelto la película: "+p.getTitulo()+". Ya se puede volver a alquilar");
         Usuario siguiente = p.siguienteEnEspera();
         if (siguiente != null) {
             reservarPelicula(siguiente, p);
